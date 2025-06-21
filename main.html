@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Bootstrap Grid Task</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    .container {
+      max-width: 600px;
+      border: 5px solid rgb(4, 255, 4);
+      background-color: rgb(41, 0, 0);
+    }
+
+    .row {
+      border: 5px solid rgb(255, 188, 188);
+      height: 200px;
+    }
+
+    [class^="col"] {
+      border: 2px dotted rgb(38, 38, 43);
+    }
+
+    /* Column colors */
+    .bg-teal {
+      background-color: teal !important;
+    }
+
+    .bg-thistle {
+      background-color: thistle !important;
+    }
+
+    .bg-tomato {
+      background-color: tomato !important;
+    }
+
+    .bg-turquoise {
+      background-color: turquoise !important;
+    }
+
+    .bg-violet {
+      background-color: violet !important;
+    }
+
+    .bg-yellowgreen {
+      background-color: yellowgreen !important;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <div class="container my-4">
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-sm-6 col-md-4 bg-teal"></div>
+      <div class="col-sm-6 col-md-8 bg-thistle"></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-4 offset-md-2 bg-tomato"></div>
+      <div class="col-md-4 bg-turquoise"></div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-4 bg-violet"></div>
+      <div class="col-sm-6 col-md-4 bg-yellowgreen"></div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
-
 </html>
